@@ -24,8 +24,10 @@ This is what the image looks like, after linearizing the values, and applying th
 ![image](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/fd94f6f5-0171-4216-9143-a758e99edced)
 
 I then proceeded to preprocess images to work as inputs for MobilNetV2. These are the things i did:
-*Resize images to size (224,224)
-*Normalise image to have values from [-1,1]
+ 
+ *Resize images to size (224,224)
+ 
+ *Normalise image to have values from [-1,1]
 
 #MobileNetV2 architecture
 <img width="999" alt="image" src="https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/c0362d86-b81b-44de-8c10-6b696937e467">
