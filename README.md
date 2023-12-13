@@ -77,8 +77,19 @@ Trimean: 10.690228426911446
 Average of the Lowest 25%: 3.9815587206612615
 Average of the Highest 25%: 24.17618491362277
 
+As evident, these values are no where near State of the art.
 
-*Updates for final project
+*Updates for the final project
+
+I've attempted to improve metrics by performing Data augmentation. Specifically, I've multiplied each channel of the PNG image by a randomly generated value, making sure the image doesn't get saturated.
+The idea is to look at minimum and maximum values in each channel and calculate the range of a multiplier so that the resulting pixel value isn't saturating the image.
+![image](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/b0f05d3f-5186-4f58-9a27-7eba18de052f)
+
+I've performed this operation for Illumination values as well. From the Von Kries model, my intuition is that every randomly generated coefficient multiplied by the raw image should divide the corresponding illumination values.
+<img width="663" alt="image" src="https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/75fe1b44-aadb-45ab-9b6c-96a2af83adc5">
+
+With this hypothesis, I created a set of 600 new images, with 600 target values. I've trained the same MobileNetV2 model for 200 epochs, and these are the metrics I got.
+![image](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/1389db87-e2b2-4f23-8ad5-e4f6e7c23558)
 
 
 References : 
