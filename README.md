@@ -1,5 +1,7 @@
 # CS 7180 Advanced Perception -ColorConstancy
 Final Project: Color Constancy
+OS : MacOs
+IDE : Google Colab
 
 Submitted by: Venkateshwaran Sundar (sundar.ve@northeastern.edu)
 
