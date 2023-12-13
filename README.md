@@ -3,9 +3,9 @@ Assignment: Color Constancy, Shadow Removal, or Intrinsic Imaging
 
 Submitted by: Venkateshwaran Sundar (sundar.ve@northeastern.edu)
 
-Github : https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy
+Github : [https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)
 
-Comparison of color constancy between linear and log images
+Computational Color constancy for linear images
 
 I've attempted to compare computational color constancy linear and log images using the Cube+ dataset.
 Cube+ dataset:
@@ -78,10 +78,8 @@ Average of the Lowest 25%: 3.9815587206612615
 Average of the Highest 25%: 24.17618491362277
 
 
-It's evident log images perform worse in comparison to linear images, however, this is not what our expectation is(or what the theory says). I believe this can be remedied by taking a better look at preprocessing for log images and tweaking the model. I used only 50 epochs for this approach.
+*Updates for final project
 
-Summary: While my results aren't what I expected to achieve, I see there's room to optimize in the way of preprocessing and optimization.
-I plan on continuing work on this, perhaps having better results for a final project.
 
 References : 
 https://ipg.fer.hr/ipg/resources/color_constancy
