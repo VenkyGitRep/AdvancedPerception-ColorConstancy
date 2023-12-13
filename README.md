@@ -1,4 +1,4 @@
-# AdvancedPerception-ColorConstancy
+# CS 7180 Advanced Perception -ColorConstancy
 Final Project: Color Constancy
 
 Submitted by: Venkateshwaran Sundar (sundar.ve@northeastern.edu)
