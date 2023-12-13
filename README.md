@@ -1,13 +1,14 @@
 # AdvancedPerception-ColorConstancy
-Assignment: Color Constancy
+Final Project: Color Constancy
 
 Submitted by: Venkateshwaran Sundar (sundar.ve@northeastern.edu)
 
-Github : [[https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)
+Github: https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final
+
 
 Computational Color constancy for linear images
 
-I've attempted to compare computational color constancy linear and log images using the Cube+ dataset.
+I've attempted to achieve state-of-the-art results for  computational color constancy on linear using the MobileNet model.
 Cube+ dataset:
 
 <img width="874" alt="Screenshot 2023-10-13 at 8 34 30 PM" src="https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/723ba4be-8720-461b-9cc4-584aa8de8603">
@@ -51,10 +52,10 @@ Mean: 6.937295205977416
 Median: 4.2797557829048225
 Trimean: 4.967636278881123
 Average of the Lowest 25%: 2.696353296734367
-Average of the Highest 25%: 15.730027304618213
+The average of the Highest 25%: 15.730027304618213
 
 Since Trimean is a good measure of central tendency, looks like using Angular error as a loss function has paid some dividends, with Trimean reducing by 2 points.
-It's evident that all metrics are better with this loss function in the model.
+All metrics are better with this loss function in the model.
 
 Here's another example of ground truth compared to my prediction.
 
@@ -77,25 +78,31 @@ Trimean: 10.690228426911446
 Average of the Lowest 25%: 3.9815587206612615
 Average of the Highest 25%: 24.17618491362277
 
-As evident, these values are no where near State of the art.
+As evident, these values are nowhere near State of the art.
 
-*Updates for the final project
+## Data Augmentation
 
 I've attempted to improve metrics by performing Data augmentation. Specifically, I've multiplied each channel of the PNG image by a randomly generated value, making sure the image doesn't get saturated.
 The idea is to look at minimum and maximum values in each channel and calculate the range of a multiplier so that the resulting pixel value isn't saturating the image.
+
 ![image](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/b0f05d3f-5186-4f58-9a27-7eba18de052f)
 
 I've performed this operation for Illumination values as well. From the Von Kries model, my intuition is that every randomly generated coefficient multiplied by the raw image should divide the corresponding illumination values.
+
 <img width="663" alt="image" src="https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/75fe1b44-aadb-45ab-9b6c-96a2af83adc5">
 
 With this hypothesis, I created a set of 600 new images, with 600 target values. I've trained the same MobileNetV2 model for 200 epochs, and these are the metrics I got.
+
 ![image](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/1389db87-e2b2-4f23-8ad5-e4f6e7c23558)
 
 
-References : 
+### References : 
+
 https://ipg.fer.hr/ipg/resources/color_constancy
 Work done by Bill Collins on Color constancy: https://wiki.khoury.northeastern.edu/display/~barrelchester/Assignment+2+-+Color+Constancy
 Research meeting with Professor Bruce Maxwell.
+
+A. Gijsenij, T. Gevers and J. van de Weijer, "Computational Color Constancy: Survey and Experiments," in IEEE Transactions on Image Processing, vol. 20, no. 9, pp. 2475-2489, Sept. 2011, doi: 10.1109/TIP.2011.2118224.
 
 
 
