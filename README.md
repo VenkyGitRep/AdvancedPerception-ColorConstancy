@@ -1,9 +1,9 @@
 # AdvancedPerception-ColorConstancy
-Assignment: Color Constancy, Shadow Removal, or Intrinsic Imaging
+Assignment: Color Constancy
 
 Submitted by: Venkateshwaran Sundar (sundar.ve@northeastern.edu)
 
-Github : [https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)
+Github : [[https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)](https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/ColorConstancy_Final)
 
 Computational Color constancy for linear images
 
