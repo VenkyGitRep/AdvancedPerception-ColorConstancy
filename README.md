@@ -43,18 +43,18 @@ My intuition is that, since the metric for color constancy performance is an ang
 
 So, I trained the model and performed predictions of 200 test images from the Cube+ dataset, and this is what I got for Angular error:
 
-Mean: 5.207108231765006
-Median: 1.061212293545509
-Trimean: 2.01843737570492
-Average of the Lowest 25%: 0.30633756652674365
-Average of the Highest 25%: 17.28117165474485
+Mean: 5.207108231765006<br/>
+Median: 1.061212293545509<br/>
+Trimean: 2.01843737570492<br/>
+Average of the Lowest 25%: 0.30633756652674365<br/>
+Average of the Highest 25%: 17.28117165474485<br/>
 
-In comparison, when the loss function was Mean Squared error, this was the metrics for Angular error:
-Mean: 6.937295205977416
-Median: 4.2797557829048225
-Trimean: 4.967636278881123
-Average of the Lowest 25%: 2.696353296734367
-The average of the Highest 25%: 15.730027304618213
+In comparison, when the loss function was Mean Squared error, this was the metrics for Angular error:<br/>
+Mean: 6.937295205977416<br/>
+Median: 4.2797557829048225<br/>
+Trimean: 4.967636278881123<br/>
+Average of the Lowest 25%: 2.696353296734367<br/>
+The average of the Highest 25%: 15.730027304618213<br/>
 
 Since Trimean is a good measure of central tendency, looks like using Angular error as a loss function has paid some dividends, with Trimean reducing by 2 points.
 All metrics are better with this loss function in the model.
@@ -74,11 +74,11 @@ Next, in the preprocessing step, I converted all images to log space.
 Trained the model on log images, and tested them on log preprocessed test images. (The same set from above)
 These are my metrics:
 
-Mean: 12.422635079639237
-Median: 10.178940428807907
-Trimean: 10.690228426911446
-Average of the Lowest 25%: 3.9815587206612615
-Average of the Highest 25%: 24.17618491362277
+Mean: 12.422635079639237<br/>
+Median: 10.178940428807907<br/>
+Trimean: 10.690228426911446<br/>
+Average of the Lowest 25%: 3.9815587206612615<br/>
+Average of the Highest 25%: 24.17618491362277<br/>
 
 As evident, these values are nowhere near State of the art.
 
@@ -100,11 +100,11 @@ With this hypothesis, I created a set of 600 new images, with 600 target values.
 
 ### References : 
 
-https://ipg.fer.hr/ipg/resources/color_constancy
+https://ipg.fer.hr/ipg/resources/color_constancy<br/>
 Work done by Bill Collins on Color constancy: https://wiki.khoury.northeastern.edu/display/~barrelchester/Assignment+2+-+Color+Constancy
-Research meeting with Professor Bruce Maxwell.
+Research meeting with Professor Bruce Maxwell.<br/>
 
-A. Gijsenij, T. Gevers and J. van de Weijer, "Computational Color Constancy: Survey and Experiments," in IEEE Transactions on Image Processing, vol. 20, no. 9, pp. 2475-2489, Sept. 2011, doi: 10.1109/TIP.2011.2118224.
+A. Gijsenij, T. Gevers and J. van de Weijer, "Computational Color Constancy: Survey and Experiments," in IEEE Transactions on Image Processing, vol. 20, no. 9, pp. 2475-2489, Sept. 2011, doi: 10.1109/TIP.2011.2118224.<br/>
 
 
 
