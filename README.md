@@ -11,6 +11,8 @@ Github: https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/tree/Co
 Computational Color constancy for linear images
 
 I've attempted to achieve state-of-the-art results for  computational color constancy on linear using the MobileNet model.
+
+State-of-the-art angular error : Mean: 1.672695, Median: 0.986252, TriMean: 1.456510, Best25: 0.329702, Worst25: 4.238528
 Cube+ dataset:
 
 <img width="874" alt="Screenshot 2023-10-13 at 8 34 30 PM" src="https://github.com/VenkyGitRep/AdvancedPerception-ColorConstancy/assets/106343437/723ba4be-8720-461b-9cc4-584aa8de8603">
